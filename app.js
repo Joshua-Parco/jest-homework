@@ -21,3 +21,10 @@ export const allNumbersGreaterThanZero = (numberArray) => {
 export const someNumbersAreOdd = (numberArray) => {
   return numberArray.some((num) => num % 2 == 0);
 };
+
+export const evensOnlyAndDoubleArray = (numberArray) => {
+  return numberArray.filter((num) => num % 2 == 0).map((num) => num * 2);
+};
+
+export const findItem(numberArray, 1) => {
+};

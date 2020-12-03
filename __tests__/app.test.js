@@ -6,7 +6,7 @@ import {
   evensOnlyArray,
   arraySum,
   allNumbersGreaterThanZero,
-
+  evensOnlyAndDoubleArray,
 } from '../app'
 
 // hint of look in before_each before_all
@@ -45,5 +45,13 @@ describe('allNumbersGreaterThanZero', () => {
     let numberArray = [1, 2, 3, 4];
     let result = true;
     expect(allNumbersGreaterThanZero(numberArray)).toEqual(result);
+  });
+});
+
+describe('evensOnlyAndDoubleArray', () => {
+  test("evensOnlyAndDoubleArray should return the doubled even elements", () => {
+    let numberArray = [1, 2, 3, 4];
+    let result = [4, 8];
+    expect(evensOnlyAndDoubleArray(numberArray)).toEqual(result);
   });
 });
